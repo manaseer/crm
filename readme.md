@@ -65,3 +65,14 @@ app.listen(PORT,()=>{
 });
 
 ```
+
+#### 5- Create folder structure of the project
+We'll create a parent `src` folder and inside this create following three subfolders
+- controllers 
+- models
+- routes
+
+```
+> mkdir src && cd src && mkdir controllers && mkdir models && mkdir routes
+
+```
