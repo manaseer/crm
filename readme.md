@@ -1,6 +1,6 @@
 ## Nod JS and Mongo DB Example
 
-### 1- Project workspace and setup
+#### 1- Project workspace and setup
 Create project folder and initialize an npm project
 ```
 > mkdir crm
@@ -11,7 +11,7 @@ Create project folder and initialize an npm project
 
 ```
 
-### 2- Set up Git repository
+#### 2- Set up Git repository
 
 ```
 > git add .
