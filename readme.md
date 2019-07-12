@@ -29,7 +29,7 @@ Install MongoDB and then install `Express` and `Mongoose`
 
 ```
 
-> git install express mongoose nodemon
+> git install express body-parser mongoose nodemon
 
 > touch .gitignore
 
@@ -46,3 +46,22 @@ Install MongoDB and then install `Express` and `Mongoose`
 
 Inside `.gitignore` add the following
 - node_modules
+
+#### 4- Create server inside index.js
+```
+import express from 'express' ;
+
+const PORT = 3000;
+const app = express();
+
+
+
+app.get('/',(req,res)=>{
+  res.send('Node and express server is running on port '+PORT);
+});
+
+app.listen(PORT,()=>{
+  console.log('Express server is running on '+PORT);
+});
+
+```
