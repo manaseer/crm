@@ -23,3 +23,26 @@ Create project folder and initialize an npm project
 > git push -u origin master
 
 ```
+
+#### 3a- Install dependencies
+Install MongoDB and then install `Express` and `Mongoose`
+
+```
+
+> git install express mongoose nodemon
+
+> touch .gitignore
+
+```
+#### 3b- Install Dev. dependencies
+Install MongoDB and then install `Express` and `Mongoose`
+
+```
+
+> npm install --save-dev babel-cli babel-preset-es2015  babel-preset-stage-0
+
+```
+
+
+Inside `.gitignore` add the following
+- node_modules
