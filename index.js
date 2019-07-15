@@ -11,7 +11,6 @@ const PORT = 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://cms:cms123@ds245548.mlab.com:45548/cms',{useNewUrlParser: true});
 
 //bodyParser setup
 
