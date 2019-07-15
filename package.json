@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d ./build ./server",
+    "build": "babel -d ./build ./src",
     "prebuild": "rm -rf build/*",
     "start": "NODE_ENV=production node ./build/index.js",
     "prestart": "npm build"
