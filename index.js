@@ -8,25 +8,21 @@ import routes from './src/routes/crmRoutes';
 
 const app = express();
 const PORT = 3000;
-console.log('---> 1');
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-console.log('---> 2');
+mongoose.connect('mongodb://cms:cms123@ds245548.mlab.com:45548/cms');
 
 //bodyParser setup
 
 app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json);
-console.log('---> 3');
+app.use(bodyParser.json());
 
 routes(app);
-console.log('---> 4');
 
 app.get('/',(req,res)=>{
   res.send('Node and express server is running on port '+PORT);
 });
-console.log('---> 5');
 
 app.listen(PORT,()=>{
   console.log('Express server is running on '+PORT);
