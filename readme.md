@@ -29,7 +29,7 @@ Install MongoDB and then install `Express` and `Mongoose`
 
 ```
 
-> git install express body-parser mongoose nodemon
+> npm install express body-parser mongoose nodemon
 
 > touch .gitignore
 
@@ -39,7 +39,7 @@ Install MongoDB and then install `Express` and `Mongoose`
 
 ```
 
-> npm install --save-dev babel-cli babel-preset-es2015  babel-preset-stage-0
+> npm install --save-dev babel-cli babel-preset-env
 
 ```
 
