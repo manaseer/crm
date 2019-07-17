@@ -1,6 +1,11 @@
 // import {addNewContact} from '../controllers/crmController'
 const addNewContact = require('../controllers/crmController');
 const routes = (app)=>{
+  app.route('/')
+  .get((req,res,next)=>{    
+    res.send('Application is OK');
+  });
+
   app.route('/contact')
   .get((req,res,next)=>{
     console.log(`Request from:${req.originalUrl}`);
