@@ -1,10 +1,12 @@
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
+const mongoose = require('mongoose');
+const ContactSchema = require('../models/crmModel');
 
-import {ContactSchema} from '../models/crmModel'
+// import {ContactSchema} from '../models/crmModel'
 
 const Contact = mongoose.model('Contact',ContactSchema);
 
-export const addNewContact = (req, res)=>{
+module.exports= addNewContact = (req, res)=>{
   let newContact = new Contact(req.body);
   newContact.save((err, contact)=>{
     if(err){

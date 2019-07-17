@@ -1,4 +1,5 @@
-import {addNewContact} from '../controllers/crmController'
+// import {addNewContact} from '../controllers/crmController'
+const addNewContact = require('../controllers/crmController');
 const routes = (app)=>{
   app.route('/contact')
   .get((req,res,next)=>{
@@ -19,4 +20,5 @@ const routes = (app)=>{
   });
 
 }
-export default routes;
+// export default routes;
+module.exports=routes;

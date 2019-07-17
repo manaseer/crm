@@ -1,8 +1,9 @@
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-export const ContactSchema = new Schema({
+module.exports= ContactSchema = new Schema({
   firstName: {
     type: String,
     required: 'Enter a first name'
