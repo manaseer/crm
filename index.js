@@ -14,7 +14,7 @@ const PORT = 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://myuser:secret@localhost:27017/mydatabase',{ useNewUrlParser: true });
+// mongoose.connect('mongodb://myuser:secret@localhost:27017/mydatabase',{ useNewUrlParser: true });
 
 //bodyParser setup
 
