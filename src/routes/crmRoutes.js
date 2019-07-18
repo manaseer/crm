@@ -14,7 +14,7 @@ const routes = (app)=>{
   },(req,res,next)=>{    
     res.send('GET request is successfull');
   })
-  // .post(addNewContact);
+  .post(addNewContact);
 
   app.route('/contact/:contactId')
   .put((req,res)=>{
